@@ -14,15 +14,15 @@ public class Solution2 {
             List<List<Integer>> foregroundAppList,
             List<List<Integer>> backgroundAppList)
     {
-        List<TreeSet<ComplexCapacity>> orderedFoundCapacities = new ArrayList<>();
-        foregroundAppList.forEach(forApp -> orderedFoundCapacities.add(getMemUsage(forApp, backgroundAppList)));
+        List<List<ComplexCapacity>> foundCapacities = new ArrayList<>();
+        foregroundAppList.forEach(forApp -> foundCapacities.add(getMemUsage(forApp, backgroundAppList)));
         List<List<Integer>> exactCapacity = new ArrayList<>();
         List<List<Integer>> closeCapacity = new ArrayList<>();
         //get values and select the ones inferior to deviceCapacity
-        orderedFoundCapacities.forEach(set -> exactCapacity.addAll(set.parallelStream().filter(e -> e.getMemoryUsage() == deviceCapacity)
+        foundCapacities.forEach(set -> exactCapacity.addAll(set.parallelStream().filter(e -> e.getMemoryUsage() == deviceCapacity)
                 .map(ComplexCapacity::getCoordinate).collect(Collectors.toList())));
         if(exactCapacity.isEmpty()){
-            orderedFoundCapacities.forEach(set -> closeCapacity.addAll(set.parallelStream().filter(e -> (e.getMemoryUsage() <= deviceCapacity)
+            foundCapacities.forEach(set -> closeCapacity.addAll(set.parallelStream().filter(e -> (e.getMemoryUsage() <= deviceCapacity)
                     && e.getMemoryUsage() >= ((deviceCapacity+e.getMemoryUsage())/2))
                     .map(ComplexCapacity::getCoordinate).collect(Collectors.toList())));
             return closeCapacity;
@@ -31,12 +31,11 @@ public class Solution2 {
         }
     }
 
-    TreeSet<ComplexCapacity> getMemUsage(List<Integer> forApp, List<List<Integer>> backgroundAppList){
+    List<ComplexCapacity> getMemUsage(List<Integer> forApp, List<List<Integer>> backgroundAppList){
        return backgroundAppList.parallelStream().map(backApp ->
                 new ComplexCapacity(forApp.get(1)+backApp.get(1),
                         Arrays.asList(forApp.get(0),backApp.get(0)))).
-                        collect(Collectors.toCollection(
-                ()->new TreeSet<>(Comparator.comparingInt(ComplexCapacity::getMemoryUsage))));
+                        collect(Collectors.toList());
     }
 
     public static void main(String[] args){
