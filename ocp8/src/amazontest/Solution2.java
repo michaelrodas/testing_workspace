@@ -20,11 +20,11 @@ public class Solution2 {
         List<List<Integer>> closeCapacity = new ArrayList<>();
         //get values and select the ones inferior to deviceCapacity
         orderedFoundCapacities.forEach(set -> exactCapacity.addAll(set.parallelStream().filter(e -> e.getMemoryUsage() == deviceCapacity)
-                .map(s -> s.getCoordinate()).collect(Collectors.toList())));
+                .map(ComplexCapacity::getCoordinate).collect(Collectors.toList())));
         if(exactCapacity.isEmpty()){
             orderedFoundCapacities.forEach(set -> closeCapacity.addAll(set.parallelStream().filter(e -> (e.getMemoryUsage() <= deviceCapacity)
                     && e.getMemoryUsage() >= ((deviceCapacity+e.getMemoryUsage())/2))
-                    .map(s -> s.getCoordinate()).collect(Collectors.toList())));
+                    .map(ComplexCapacity::getCoordinate).collect(Collectors.toList())));
             return closeCapacity;
         } else {
             return exactCapacity;
@@ -34,7 +34,7 @@ public class Solution2 {
     TreeSet<ComplexCapacity> getMemUsage(List<Integer> forApp, List<List<Integer>> backgroundAppList){
        return backgroundAppList.parallelStream().map(backApp ->
                 new ComplexCapacity(forApp.get(1)+backApp.get(1),
-                        Arrays.asList(new Integer[]{forApp.get(0),backApp.get(0)}))).
+                        Arrays.asList(forApp.get(0),backApp.get(0)))).
                         collect(Collectors.toCollection(
                 ()->new TreeSet<>(Comparator.comparingInt(ComplexCapacity::getMemoryUsage))));
     }
