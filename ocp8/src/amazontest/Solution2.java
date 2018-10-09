@@ -9,14 +9,21 @@ public class Solution2 {
             List<List<Integer>> foregroundAppList,
             List<List<Integer>> backgroundAppList)
     {
-        List<TreeSet<ComplexCapacity>> tempResult = new ArrayList<>();
-        foregroundAppList.forEach(forApp -> tempResult.add(getMemUsage(forApp, backgroundAppList)));
-        List<List<Integer>> result = new ArrayList<>();
+        List<TreeSet<ComplexCapacity>> orderedFoundCapacities = new ArrayList<>();
+        foregroundAppList.forEach(forApp -> orderedFoundCapacities.add(getMemUsage(forApp, backgroundAppList)));
+        List<List<Integer>> exactCapacity = new ArrayList<>();
+        List<List<Integer>> closeCapacity = new ArrayList<>();
         //get values and select the ones inferior to deviceCapacity
-        Object[] objArray = tempResult.toArray();
-        List<Object> array = Arrays.asList(objArray);
-        List<Object> objectList = array.stream().filter(e -> ((ComplexCapacity) e).getMemoryUsage() <= deviceCapacity).collect(Collectors.toList());
-        return result;
+        orderedFoundCapacities.forEach(set -> exactCapacity.addAll(set.parallelStream().filter(e -> e.getMemoryUsage() == deviceCapacity)
+                .map(s -> s.getCoordinate()).collect(Collectors.toList())));
+        if(exactCapacity.isEmpty()){
+            orderedFoundCapacities.forEach(set -> closeCapacity.addAll(set.parallelStream().filter(e -> (e.getMemoryUsage() <= deviceCapacity)
+                    && e.getMemoryUsage() >= ((deviceCapacity+e.getMemoryUsage())/2))
+                    .map(s -> s.getCoordinate()).collect(Collectors.toList())));
+            return closeCapacity;
+        } else {
+            return exactCapacity;
+        }
     }
 
     TreeSet<ComplexCapacity> getMemUsage(List<Integer> forApp, List<List<Integer>> backgroundAppList){
@@ -29,26 +36,29 @@ public class Solution2 {
 
     public static void main(String[] args){
         Solution2 mySolution = new Solution2();
-        List<Integer> values = new ArrayList<>();
-        values.add(1);
-        values.add(2);
-        List<Integer> values2 = new ArrayList<>();
-        values2.add(2);
-        values2.add(4);
-        List<Integer> values3 = new ArrayList<>();
-        values3.add(3);
-        values3.add(6);
-        List<Integer> values4 = new ArrayList<>();
-        values4.add(1);
-        values4.add(2);
-        List<List<Integer>> forApp = new ArrayList<>();
-        List<List<Integer>> backApp = new ArrayList<>();
-        forApp.add(values);
-        forApp.add(values2);
-        forApp.add(values3);
-        backApp.add(values4);
+        List<Integer> values = Arrays.asList(1,2);
+        List<Integer> values2 = Arrays.asList(2,4);
+        List<Integer> values3 = Arrays.asList(3,6);
+        List<Integer> values4 = Arrays.asList(1,2);
+        List<List<Integer>> forApp = Arrays.asList(values,values2,values3);
+        List<List<Integer>> backApp = Arrays.asList(values4);
         List<List<Integer>> result = mySolution.optimalUtilization(7, forApp,backApp);
+        System.out.println("Case 1:");
         result.forEach(System.out::println);
+
+        List<Integer> forValues = Arrays.asList(1,3);
+        List<Integer> forValues2 = Arrays.asList(2,5);
+        List<Integer> forValues3 = Arrays.asList(3,7);
+        List<Integer> forValues4 = Arrays.asList(4,10);
+        List<List<Integer>> forApp2 = Arrays.asList(forValues,forValues2,forValues3,forValues4);
+        List<Integer> backValues = Arrays.asList(1,2);
+        List<Integer> backValues2 = Arrays.asList(2,3);
+        List<Integer> backValues3 = Arrays.asList(3,4);
+        List<Integer> backValues4 = Arrays.asList(4,5);
+        List<List<Integer>> backApp2 = Arrays.asList(backValues,backValues2,backValues3,backValues4);
+        List<List<Integer>> result2 = mySolution.optimalUtilization(10, forApp2,backApp2);
+        System.out.println("Case 2:");
+        result2.forEach(System.out::println);
     }
 }
 /*

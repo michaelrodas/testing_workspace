@@ -1,16 +1,13 @@
 package amazontest;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 
 // CLASS BEGINS, THIS CLASS IS REQUIRED
 public class Solution
 {
     // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
-    List<List<Integer>> ClosestXdestinations(int numDestinations,
+    List<List<Integer>> closestXdestinations(int numDestinations,
                                              List<List<Integer>> allLocations,
                                              int numDeliveries)
     {
@@ -25,7 +22,7 @@ public class Solution
     }
     // METHOD SIGNATURE ENDS
 
-    double getDistanceToLocation(List<Integer> coordinate){
+    private double getDistanceToLocation(List<Integer> coordinate){
         return Math.pow(coordinate.get(0),2) + Math.pow(coordinate.get(1),2);
     }
 
@@ -33,22 +30,24 @@ public class Solution
     public static void main(String[] args){
         //find shortest distances for the number of deliveries
         Solution mySolution = new Solution();
-        List<Integer> values = new ArrayList<>();
-        values.add(1);
-        values.add(2);
-        List<Integer> values2 = new ArrayList<>();
-        values2.add(3);
-        values2.add(4);
-        List<Integer> values3 = new ArrayList<>();
-        values3.add(1);
-        values3.add(-1);
-        List<List<Integer>> coords = new ArrayList<>();
-        coords.add(values);
-        coords.add(values2);
-        coords.add(values3);
-        List<List<Integer>> result = mySolution.ClosestXdestinations(3, coords,2);
+        List<Integer> values = Arrays.asList(1,2);
+        List<Integer> values2 = Arrays.asList(3,4);
+        List<Integer> values3 = Arrays.asList(1,-1);
+        List<List<Integer>> coords = Arrays.asList(values,values2,values3);
+        List<List<Integer>> result = mySolution.closestXdestinations(3, coords,2);
+        System.out.println("Case 1:");
         result.forEach(System.out::println);
 
+        List<Integer> cvalues = Arrays.asList(3,6);
+        List<Integer> cvalues2 = Arrays.asList(2,4);
+        List<Integer> cvalues3 = Arrays.asList(5,3);
+        List<Integer> cvalues4 = Arrays.asList(2,7);
+        List<Integer> cvalues5 = Arrays.asList(1,8);
+        List<Integer> cvalues6 = Arrays.asList(7,9);
+        List<List<Integer>> coords2 = Arrays.asList(cvalues,cvalues2,cvalues3,cvalues4,cvalues5,cvalues6);
+        List<List<Integer>> result2 = mySolution.closestXdestinations(6, coords2,3);
+        System.out.println("Case 2:");
+        result2.forEach(System.out::println);
         /*
         6,
         [[3,6],[2,4],[5,3],[2,7],[1,8],[7,9]]
