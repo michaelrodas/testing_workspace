@@ -6,7 +6,10 @@ import java.util.stream.Collectors;
 // CLASS BEGINS, THIS CLASS IS REQUIRED
 public class Solution
 {
-    // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
+    /*
+        Find shortest distances for the number of deliveries requested
+     */
+
     List<List<Integer>> closestXdestinations(int numDestinations,
                                              List<List<Integer>> allLocations,
                                              int numDeliveries)
@@ -20,7 +23,7 @@ public class Solution
         tempResult.forEach( coordinate -> result.add(coordinate.getCoordinate()));
         return result;
     }
-    // METHOD SIGNATURE ENDS
+
 
     private double getDistanceToLocation(List<Integer> coordinate){
         return Math.pow(coordinate.get(0),2) + Math.pow(coordinate.get(1),2);
@@ -28,7 +31,6 @@ public class Solution
 
 
     public static void main(String[] args){
-        //find shortest distances for the number of deliveries
         Solution mySolution = new Solution();
         List<Integer> values = Arrays.asList(1,2);
         List<Integer> values2 = Arrays.asList(3,4);

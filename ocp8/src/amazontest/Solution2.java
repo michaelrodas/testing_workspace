@@ -4,6 +4,11 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Solution2 {
+    /*
+        Find optimal memory usage by combining foreground app with background app
+        if memory usage is equal than capacity, it's optimal, otherwise like for closest ones
+     */
+
     List<List<Integer>> optimalUtilization(
             int deviceCapacity,
             List<List<Integer>> foregroundAppList,
