@@ -6,6 +6,7 @@
     <modules>
         <module>gof-patterns</module>
         <module>conversorbases</module>
+        <module>awssvc-nosecurity</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>

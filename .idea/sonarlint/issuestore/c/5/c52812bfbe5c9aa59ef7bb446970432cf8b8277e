@@ -1,0 +1,17 @@
+
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(ğä´—ıÿÿÿÿ8åå‘Ùœ.
+E
+java:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ú‹ŠÙœ.
+l	java:S116"RRename this field "WORKERS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø’òØüÿÿÿÿ
+C	java:S108j")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
+f	java:S116"QRename this field "POISON" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ù¥ø
+a
+java:S2142j"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(”ÈÚßşÿÿÿÿ
+n	java:S116"TRename this field "FILE_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÁ®äúÿÿÿÿ
+j	java:S116"URename this field "BATCH_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’àÉ
+O	java:S899C":Do something with the "boolean" value returned by "offer".(’†ùû
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(Ò®ô¹
+T	java:S899;":Do something with the "boolean" value returned by "offer".(Ş¬§˜ıÿÿÿÿ
+b
+java:S1193F"@Replace the usage of the "instanceof" operator by a catch block.(¨°ä®øÿÿÿÿ8»ÅÙœ.
