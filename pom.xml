@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>gof-patterns</module>
+        <module>conversorbases</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
