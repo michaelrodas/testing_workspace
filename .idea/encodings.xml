@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$/awssvc-nosecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/conversorbases/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gof-patterns/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jackpotgame/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jackpots/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jackpotserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

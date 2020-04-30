@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jackpotgame" />
         <module name="awssvc-nosecurity" />
+        <module name="jackpotserver" />
+        <module name="jackpots" />
         <module name="gof-patterns" />
         <module name="conversorbases" />
       </profile>
@@ -15,6 +18,9 @@
       <module name="awssvc-nosecurity" target="1.8" />
       <module name="conversorbases" target="1.8" />
       <module name="gof-patterns" target="1.8" />
+      <module name="jackpotgame" target="1.8" />
+      <module name="jackpots" target="1.8" />
+      <module name="jackpotserver" target="1.8" />
       <module name="testing_workspace" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +29,9 @@
       <module name="awssvc-nosecurity" options="-parameters" />
       <module name="conversorbases" options="-parameters" />
       <module name="gof-patterns" options="-parameters" />
+      <module name="jackpotgame" options="-parameters" />
+      <module name="jackpots" options="-parameters" />
+      <module name="jackpotserver" options="-parameters" />
       <module name="testing_workspace" options="-parameters" />
     </option>
   </component>

@@ -7,6 +7,8 @@
         <module>gof-patterns</module>
         <module>conversorbases</module>
         <module>awssvc-nosecurity</module>
+        <module>jackpotgame</module>
+        <module>jackpotserver</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
