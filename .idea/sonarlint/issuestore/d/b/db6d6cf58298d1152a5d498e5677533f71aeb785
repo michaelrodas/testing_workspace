@@ -1,8 +1,0 @@
-
-J
-java:S3740
-"/Provide the parametrized type for this generic.(°€ŸÔùÿÿÿÿ
-l	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Öæª
-r	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(š–†ıÿÿÿÿ
-n	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(»³½‹
-S	java:S106("9Replace this use of System.out or System.err by a logger.(Œ øÿÿÿÿ

@@ -1,8 +1,0 @@
-
-]
-java:S1854"DRemove this useless assignment to local variable "patternFor4Digit".(³±äõıÿÿÿÿ
-Q	java:S106"9Replace this use of System.out or System.err by a logger.(şïª×ıÿÿÿÿ
-L	java:S106"9Replace this use of System.out or System.err by a logger.(ß­ê
-Q	java:S106"9Replace this use of System.out or System.err by a logger.(¹¦£şÿÿÿÿ
-N
-java:S1481"5Remove this unused "patternFor4Digit" local variable.(³±äõıÿÿÿÿ

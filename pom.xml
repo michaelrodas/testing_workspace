@@ -9,6 +9,8 @@
         <module>awssvc-nosecurity</module>
         <module>jackpotgame</module>
         <module>jackpotserver</module>
+        <module>largefileprocessing</module>
+        <module>amazontest</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
