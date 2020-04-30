@@ -11,6 +11,7 @@
         <module>jackpotserver</module>
         <module>largefileprocessing</module>
         <module>amazontest</module>
+        <module>objectsize</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
