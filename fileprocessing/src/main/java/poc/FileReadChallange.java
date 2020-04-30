@@ -1,20 +1,5 @@
 package poc;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ConcurrentHashMap;
-
 public class FileReadChallange {
 
     private String FILE_NAME = "itcont.txt";
@@ -123,4 +108,5 @@ public class FileReadChallange {
         }
         return sb.toString();
     }
+* */
 }

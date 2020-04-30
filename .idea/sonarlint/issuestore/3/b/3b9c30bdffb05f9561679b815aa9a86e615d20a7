@@ -1,0 +1,93 @@
+
+a
+java:S1301J"KReplace this "switch" statement by "if" statements to increase readability.(ĞÈŠì
+J
+java:S3740E"/Provide the parametrized type for this generic.(±ß•Âùÿÿÿÿ
+J
+java:S3740E"/Provide the parametrized type for this generic.(±ß•Âùÿÿÿÿ
+E
+java:S3740"/Provide the parametrized type for this generic.(ŸæÈ€
+_
+java:S21843"DCast one of the operands of this subtraction operation to a "float".(°´´¹øÿÿÿÿ
+Q
+java:S1143›"5Remove this return statement from this finally block.(ÉôŠóûÿÿÿÿ
+_
+java:S1226"CIntroduce a new variable instead of reusing the parameter "number".(§Æ§áûÿÿÿÿ
+I
+java:S1121f".Extract the assignment out of this expression.(æ’ø©üÿÿÿÿ
+P
+java:S1161":Add the "@Override" annotation above this method signature(œöš¼
+L
+java:S18540"7Remove this useless assignment to local variable "sss".(öŞŸH
+K
+java:S1854/"5Remove this useless assignment to local variable "s".(­­¿Ú
+K
+java:S1854."5Remove this useless assignment to local variable "s".(Áâ„ú
+L
+java:S1854,"6Remove this useless assignment to local variable "ss".(‡ŞÖŠ
+M
+java:S1854+"7Remove this useless assignment to local variable "ccc".(êáµ
+L
+java:S1854*"6Remove this useless assignment to local variable "cc".(¦Î©ç
+Q
+java:S1854f"6Remove this useless assignment to local variable "b1".(æ’ø©üÿÿÿÿ
+M
+java:S1854s"7Remove this useless assignment to local variable "dia".(«Çï”
+R
+java:S1854"<Remove this useless assignment to local variable "mysecond".(ŸæÈ€
+:
+java:S16599"Declare "j" on a separate line.(‚Èôÿÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(­’’€
+M	java:S106!"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(¹ßŒ„
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(Ü€Àùÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(Ÿö·şÿÿÿÿ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(¦‘ÄÛ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(Èº·á
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(«¶îÿÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(Æöå§
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(¾ó¼¸ûÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(ó¾Úï
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(íÅŞ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(¥şÂæıÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(ôá¦Áÿÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(Ë½—Àûÿÿÿÿ
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(£˜¹§ÿÿÿÿÿ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(¨÷”
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(Š·Ö÷úÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(îØµüıÿÿÿÿ
+N	java:S106g"9Replace this use of System.out or System.err by a logger.(ış¥Å
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(†ŠÖªşÿÿÿÿ
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(°úÆ«
+5
+java:S2153m"Remove the boxing to "Integer".(¼‚–°
+7
+java:S2129m"!Remove this "Integer" constructor(¼‚–°
+E
+java:S1874m"/Remove this use of "Integer"; it is deprecated.(¼‚–°
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(Ó£‚ôüÿÿÿÿ
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106{"9Replace this use of System.out or System.err by a logger.(Ì§Í
+A
+java:S1172‚"*Remove this unused method parameter "num".(åéÖÇ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ëõğÃşÿÿÿÿ
+F
+java:S1172†"*Remove this unused method parameter "num".(£÷¡‰ÿÿÿÿÿ
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(áª´‰øÿÿÿÿ
+V
+java:S1854":Remove this useless assignment to local variable "number".(§Æ§áûÿÿÿÿ
+W
+java:S2130”";Use "Float.parseFloat" for this string-to-float conversion.(…¬õúÿÿÿÿ
+O	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Òğœ
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(… É¾ûÿÿÿÿ
+=
+java:S1481*"'Remove this unused "cc" local variable.(¦Î©ç
+>
+java:S1481+"(Remove this unused "ccc" local variable.(êáµ
+>
+java:S1481s"(Remove this unused "dia" local variable.(«Çï”
+C
+java:S1481"-Remove this unused "mysecond" local variable.(ŸæÈ€
+V	java:S125t"<This block of commented-out lines of code should be removed.(‘›İ¦øÿÿÿÿ
+?
+java:S1144¢"(Remove this unused private "add" method.(‹ŸâË

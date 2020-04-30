@@ -1,0 +1,21 @@
+
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(­›åÿÿÿÿÿ
+9
+java:S1148<"#Use a logger to log this exception.(îÍç™
+O
+java:S1128"4Remove this unused import 'javax.swing.GroupLayout'.(±¢÷Öıÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé
+E
+java:S1128"/Remove this unused import 'javax.swing.JPanel'.(ò‚•
+€
+java:S1450""eRemove the "bgGrupoOpcionesEntrada" field and declare it as a local variable in the relevant methods.(öƒ¢üúÿÿÿÿ
+
+java:S1450*"dRemove the "bgGrupoOpcionesSalida" field and declare it as a local variable in the relevant methods.(±øûüÿÿÿÿ
+v
+java:S1450!"`Remove the "lblLetreroEntrada" field and declare it as a local variable in the relevant methods.(†ëù‡
+z
+java:S1450)"_Remove the "lblLetreroSalida" field and declare it as a local variable in the relevant methods.(‰¾¬Æÿÿÿÿÿ
+s
+java:S1450'"XRemove the "lblNumero" field and declare it as a local variable in the relevant methods.(íıÖÆşÿÿÿÿ
+Q	java:S125]"<This block of commented-out lines of code should be removed.(ÈŒ¿

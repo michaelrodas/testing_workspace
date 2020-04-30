@@ -1,0 +1,13 @@
+
+i
+java:S2259"NA "NullPointerException" could be thrown; "numeroConvertido" is nullable here.(Ð± ¡þÿÿÿÿ
+…
+java:S1130"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ž«ûäÿÿÿÿÿ
+n
+java:S1858"S"numeroConvertido" is already a string, there's no need to call "toString()" on it.(Ð± ¡þÿÿÿÿ
+€
+java:S1130"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(»¸‰Ì
+7	java:S131""Add a default case to this switch.(²ŒüÀ
+…
+java:S1130/"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ÁóÁªúÿÿÿÿ
+7	java:S1311""Add a default case to this switch.(ÙÒêŠ
