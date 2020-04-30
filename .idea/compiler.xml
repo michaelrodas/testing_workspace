@@ -6,16 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="awssvc-nosecurity" />
         <module name="gof-patterns" />
+        <module name="conversorbases" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="awssvc-nosecurity" target="1.8" />
+      <module name="conversorbases" target="1.8" />
       <module name="gof-patterns" target="1.8" />
       <module name="testing_workspace" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="awssvc-nosecurity" options="-parameters" />
+      <module name="conversorbases" options="-parameters" />
       <module name="gof-patterns" options="-parameters" />
       <module name="testing_workspace" options="-parameters" />
     </option>

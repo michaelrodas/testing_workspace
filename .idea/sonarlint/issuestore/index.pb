@@ -9,7 +9,7 @@ f
 6fileprocessing/src/main/java/poc/RestAPIConstants.java,9/9/99f797f9aa2f7a9680ae2e7c63a400bc62f05db3
 Z
 *fileprocessing/src/main/java/poc/Test.java,7/d/7d8c13b1445f0f1a4c047badd4f3ab735a50802d
-T
-$conversorE/src/logica/Conversor.java,d/4/d4c27db990c57b4e4b4dc4dbbf7a9237bcf76387
-a
-1conversorE/src/presentacion/VentanaPrincipal.java,d/8/d85770c5f0a6615339667c527122574b6ee97a24
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+i
+9gof-patterns/src/main/java/examples/singleton/Prueba.java,5/3/53823e8994f437982e800897b6cfd7c02c2301c0
