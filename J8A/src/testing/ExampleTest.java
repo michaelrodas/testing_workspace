@@ -1,5 +1,11 @@
 package testing;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class ExampleTest {
 
 	static{
@@ -34,5 +40,39 @@ public class ExampleTest {
 			break;
 		}
 
+		int var ='7';
+
+		final boolean flag;
+		flag = false;
+		while(flag) {
+			System.out.println("Good Morning!");
+		}
+
+		int i;
+		for(i=0; i<=2; i++){}
+		System.out.println(i);
+
+        Boolean [] arr = new Boolean[2];
+        List<Boolean> list = new ArrayList<>();
+        list.add(arr[0]);
+        list.add(arr[1]);
+
+        if(list.remove(0)) {
+            list.remove(1);
+        }
+
+        String bbb = new String(new char[]{'h','a'});
+		
+		try {
+			testMethod();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	static void testMethod() throws IOException{
+
+		throw new FileNotFoundException();
 	}
 }
