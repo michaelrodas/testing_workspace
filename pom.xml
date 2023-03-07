@@ -12,6 +12,7 @@
         <module>largefileprocessing</module>
         <module>amazontest</module>
         <module>objectsize</module>
+        <module>algos</module>
     </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
